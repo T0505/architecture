@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml:2:13-83
-INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml:2:13-83
+ADDED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml:2:13-83
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml:2:13-83
 	package
-		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml
 	xmlns:android
-		ADDED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml:2:23-81
+		ADDED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml:2:23-81
 uses-sdk
-INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml reason: use-sdk injection requested
-INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml
-INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml reason: use-sdk injection requested
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml
 	android:targetSdkVersion
-		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml
 	android:minSdkVersion
-		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest17930702019944149830.xml
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15845647276241383560.xml

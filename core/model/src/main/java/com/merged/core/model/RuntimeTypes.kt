@@ -37,3 +37,43 @@ data class RuntimeResult(
     }
 }
 
+data class ModuleStatus(
+    val id: String,
+    val name: String,
+    val state: String = "registered",
+    val detail: String = "",
+    val updatedAt: Long = System.currentTimeMillis()
+)
+
+data class AgentStatus(
+    val appId: String = "",
+    val backendUrl: String = "",
+    val deviceId: String = "",
+    val token: String = "",
+    val registrationState: String = "pending",
+    val configVersion: String = "unavailable",
+    val updateState: String = "idle",
+    val taskStatus: String = "idle",
+    val lastSyncAt: Long? = null,
+    val lastHeartbeatAt: Long? = null,
+    val lastLogUploadAt: Long? = null,
+    val lastUpdateCheckAt: Long? = null
+)
+
+data class RuntimeLogEntry(
+    val timestamp: Long = System.currentTimeMillis(),
+    val level: String = "INFO",
+    val tag: String,
+    val message: String
+)
+
+data class RuntimeSnapshot(
+    val deviceId: String = "",
+    val deviceLabel: String = "",
+    val serviceState: String = "stopped",
+    val serviceMessage: String = "Runtime service is not running",
+    val moduleStatuses: List<ModuleStatus> = emptyList(),
+    val permissionStates: Map<String, String> = emptyMap(),
+    val agentStatus: AgentStatus = AgentStatus(),
+    val logs: List<RuntimeLogEntry> = emptyList()
+)

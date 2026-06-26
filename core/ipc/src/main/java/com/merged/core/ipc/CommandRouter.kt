@@ -19,6 +19,20 @@ interface CommandPolicy {
     fun check(command: RuntimeCommand, handler: CommandHandler): PolicyDecision
 }
 
+data class AuditRecord(
+    val requestId: String,
+    val source: String,
+    val target: String,
+    val action: String,
+    val ok: Boolean,
+    val message: String,
+    val durationMs: Long
+)
+
+interface AuditSink {
+    fun record(record: AuditRecord)
+}
+
 class DefaultCommandPolicy(
     private val highRiskAllowList: Set<String> = emptySet()
 ) : CommandPolicy {
@@ -42,7 +56,8 @@ class DefaultCommandPolicy(
 }
 
 class CommandRouter(
-    private val policy: CommandPolicy
+    private val policy: CommandPolicy,
+    private val auditSink: AuditSink? = null
 ) {
     private val handlers = linkedMapOf<String, CommandHandler>()
 
@@ -52,13 +67,33 @@ class CommandRouter(
     }
 
     fun dispatch(command: RuntimeCommand): RuntimeResult {
+        val startedAt = System.currentTimeMillis()
         val handler = handlers[command.target]
-            ?: return RuntimeResult.error("unknown target: ${command.target}")
+        if (handler == null) {
+            val result = RuntimeResult.error("unknown target: ${command.target}")
+            audit(command, result, startedAt)
+            return result
+        }
 
-        return when (val decision = policy.check(command, handler)) {
+        val result = when (val decision = policy.check(command, handler)) {
             PolicyDecision.Allowed -> handler.handle(command)
             is PolicyDecision.Denied -> RuntimeResult.error(decision.reason)
         }
+        audit(command, result, startedAt)
+        return result
+    }
+
+    private fun audit(command: RuntimeCommand, result: RuntimeResult, startedAt: Long) {
+        auditSink?.record(
+            AuditRecord(
+                requestId = command.requestId,
+                source = command.source,
+                target = command.target,
+                action = command.action,
+                ok = result.ok,
+                message = result.message,
+                durationMs = System.currentTimeMillis() - startedAt
+            )
+        )
     }
 }
-

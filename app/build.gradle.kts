@@ -7,6 +7,10 @@ android {
     namespace = "com.merged.app"
     compileSdk = 35
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     defaultConfig {
         applicationId = "com.merged.runtime"
         minSdk = 23
@@ -31,5 +35,5 @@ dependencies {
     implementation(project(":feature:terminal"))
     implementation(project(":feature:input"))
     implementation(project(":native-bridge"))
+    implementation("androidx.core:core-ktx:1.13.1")
 }
-

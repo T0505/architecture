@@ -6,6 +6,7 @@ import com.merged.automation.AutomationModule
 import com.merged.core.ipc.CommandRouter
 import com.merged.core.ipc.DefaultCommandPolicy
 import com.merged.core.service.ModuleRegistry
+import com.merged.core.service.RuntimeStateStore
 import com.merged.input.InputModule
 import com.merged.launcher.LauncherModule
 import com.merged.nativebridge.NativeBridgeModule
@@ -17,16 +18,38 @@ import com.merged.terminal.TerminalModule
 import com.merged.vision.VisionModule
 
 class MergedRuntimeApp : Application() {
-    val router = CommandRouter(DefaultCommandPolicy())
+    lateinit var runtimeManager: RuntimeManager
+        private set
+    lateinit var stateStore: RuntimeStateStore
+        private set
+
+    val router by lazy {
+        CommandRouter(
+            policy = DefaultCommandPolicy(
+                highRiskAllowList = setOf(
+                    "automation.performAction",
+                    "automation.setAccessibilityState",
+                    "vision.capture",
+                    "input.sendKey",
+                    "input.sendText",
+                    "input.sendTouch"
+                )
+            ),
+            auditSink = stateStore
+        )
+    }
     val registry = ModuleRegistry()
 
     override fun onCreate() {
         super.onCreate()
 
+        runtimeManager = RuntimeManager.create(this)
+        stateStore = runtimeManager.stateStore
+
         registry.register(StorageModule(filesDir))
         registry.register(SchedulingModule())
-        registry.register(LauncherModule())
-        registry.register(AgentModule())
+        registry.register(LauncherModule(runtimeManager, stateStore, registry))
+        registry.register(AgentModule(stateStore))
         registry.register(NativeBridgeModule())
         registry.register(ScriptModule())
         registry.register(AutomationModule())
@@ -34,7 +57,16 @@ class MergedRuntimeApp : Application() {
         registry.register(PluginModule())
         registry.register(TerminalModule())
         registry.register(InputModule())
+        stateStore.registerModules(registry.modules())
         registry.attachTo(router)
+        registry.modules().forEach { module ->
+            stateStore.updateModuleState(
+                id = module.capability.id,
+                name = module.capability.name,
+                state = "ready",
+                detail = "Registered in command router"
+            )
+        }
+        stateStore.appendLog("App", "Merged runtime application initialized")
     }
 }
-
