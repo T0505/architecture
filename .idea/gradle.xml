@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/ipc" />
+            <option value="$PROJECT_DIR$/core/model" />
+            <option value="$PROJECT_DIR$/core/scheduling" />
+            <option value="$PROJECT_DIR$/core/service" />
+            <option value="$PROJECT_DIR$/core/storage" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/agent" />
+            <option value="$PROJECT_DIR$/feature/automation" />
+            <option value="$PROJECT_DIR$/feature/input" />
+            <option value="$PROJECT_DIR$/feature/launcher" />
+            <option value="$PROJECT_DIR$/feature/plugin" />
+            <option value="$PROJECT_DIR$/feature/script" />
+            <option value="$PROJECT_DIR$/feature/terminal" />
+            <option value="$PROJECT_DIR$/feature/vision" />
+            <option value="$PROJECT_DIR$/native-bridge" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

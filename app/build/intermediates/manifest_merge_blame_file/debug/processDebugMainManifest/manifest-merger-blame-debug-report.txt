@@ -1,0 +1,78 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.merged.runtime"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:4:5-77
+12-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:4:22-74
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:5:5-81
+13-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:5:22-78
+14
+15    <application
+15-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:7:5-37:19
+16        android:name="com.merged.app.MergedRuntimeApp"
+16-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:8:9-55
+17        android:allowBackup="false"
+17-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:9:9-36
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:label="Merged Runtime"
+20-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:10:9-39
+21        android:supportsRtl="true"
+21-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:11:9-35
+22        android:testOnly="true" >
+23        <activity
+23-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:13:9-20:20
+24            android:name="com.merged.app.MainActivity"
+24-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:14:13-55
+25            android:exported="true" >
+25-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:15:13-36
+26            <intent-filter>
+26-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:16:13-19:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:17:17-69
+27-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:18:17-77
+29-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:18:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <service
+33-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:22:9-25:41
+34            android:name="com.merged.app.EngineRuntimeService"
+34-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:23:13-63
+35            android:exported="false"
+35-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:24:13-37
+36            android:process=":engine" />
+36-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:25:13-38
+37        <service
+37-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:27:9-30:45
+38            android:name="com.merged.app.AutomationRuntimeService"
+38-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:28:13-67
+39            android:exported="false"
+39-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:29:13-37
+40            android:process=":automation" />
+40-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:30:13-42
+41        <service
+41-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:32:9-35:41
+42            android:name="com.merged.app.PluginRuntimeService"
+42-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:33:13-63
+43            android:exported="false"
+43-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:34:13-37
+44            android:process=":plugin" />
+44-->/Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:35:13-38
+45    </application>
+46
+47</manifest>

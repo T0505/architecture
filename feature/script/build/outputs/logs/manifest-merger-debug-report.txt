@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml:2:13-83
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml:2:13-83
+	package
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml
+	xmlns:android
+		ADDED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml:2:23-81
+uses-sdk
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml reason: use-sdk injection requested
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml
+INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml
+	android:targetSdkVersion
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml
+	android:minSdkVersion
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13164919101560545898.xml

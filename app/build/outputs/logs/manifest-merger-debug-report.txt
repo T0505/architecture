@@ -1,0 +1,129 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from [:core:storage] /Users/t/profile/box/merged-apk-architecture/core/storage/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:core:scheduling] /Users/t/profile/box/merged-apk-architecture/core/scheduling/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:launcher] /Users/t/profile/box/merged-apk-architecture/feature/launcher/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:agent] /Users/t/profile/box/merged-apk-architecture/feature/agent/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:script] /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:automation] /Users/t/profile/box/merged-apk-architecture/feature/automation/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:vision] /Users/t/profile/box/merged-apk-architecture/feature/vision/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:plugin] /Users/t/profile/box/merged-apk-architecture/feature/plugin/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:terminal] /Users/t/profile/box/merged-apk-architecture/feature/terminal/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:feature:input] /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:native-bridge] /Users/t/profile/box/merged-apk-architecture/native-bridge/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:core:service] /Users/t/profile/box/merged-apk-architecture/core/service/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:core:ipc] /Users/t/profile/box/merged-apk-architecture/core/ipc/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:core:model] /Users/t/profile/box/merged-apk-architecture/core/model/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:4:5-77
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:4:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:5:22-78
+application
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:7:5-37:19
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:7:5-37:19
+	android:extractNativeLibs
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+	android:supportsRtl
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:10:9-39
+	android:allowBackup
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:9:9-36
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:8:9-55
+activity#com.merged.app.MainActivity
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:13:9-20:20
+	android:exported
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:15:13-36
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:14:13-55
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:16:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:18:27-74
+service#com.merged.app.EngineRuntimeService
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:22:9-25:41
+	android:process
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:25:13-38
+	android:exported
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:23:13-63
+service#com.merged.app.AutomationRuntimeService
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:27:9-30:45
+	android:process
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:30:13-42
+	android:exported
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:28:13-67
+service#com.merged.app.PluginRuntimeService
+ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:32:9-35:41
+	android:process
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:35:13-38
+	android:exported
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml:33:13-63
+uses-sdk
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+MERGED from [:core:storage] /Users/t/profile/box/merged-apk-architecture/core/storage/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:storage] /Users/t/profile/box/merged-apk-architecture/core/storage/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:scheduling] /Users/t/profile/box/merged-apk-architecture/core/scheduling/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:scheduling] /Users/t/profile/box/merged-apk-architecture/core/scheduling/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:launcher] /Users/t/profile/box/merged-apk-architecture/feature/launcher/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:launcher] /Users/t/profile/box/merged-apk-architecture/feature/launcher/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:agent] /Users/t/profile/box/merged-apk-architecture/feature/agent/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:agent] /Users/t/profile/box/merged-apk-architecture/feature/agent/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:script] /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:script] /Users/t/profile/box/merged-apk-architecture/feature/script/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:automation] /Users/t/profile/box/merged-apk-architecture/feature/automation/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:automation] /Users/t/profile/box/merged-apk-architecture/feature/automation/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:vision] /Users/t/profile/box/merged-apk-architecture/feature/vision/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:vision] /Users/t/profile/box/merged-apk-architecture/feature/vision/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:plugin] /Users/t/profile/box/merged-apk-architecture/feature/plugin/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:plugin] /Users/t/profile/box/merged-apk-architecture/feature/plugin/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:terminal] /Users/t/profile/box/merged-apk-architecture/feature/terminal/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:terminal] /Users/t/profile/box/merged-apk-architecture/feature/terminal/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:input] /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:feature:input] /Users/t/profile/box/merged-apk-architecture/feature/input/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:native-bridge] /Users/t/profile/box/merged-apk-architecture/native-bridge/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:native-bridge] /Users/t/profile/box/merged-apk-architecture/native-bridge/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:service] /Users/t/profile/box/merged-apk-architecture/core/service/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:service] /Users/t/profile/box/merged-apk-architecture/core/service/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:ipc] /Users/t/profile/box/merged-apk-architecture/core/ipc/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:ipc] /Users/t/profile/box/merged-apk-architecture/core/ipc/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:model] /Users/t/profile/box/merged-apk-architecture/core/model/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:core:model] /Users/t/profile/box/merged-apk-architecture/core/model/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/t/profile/box/merged-apk-architecture/app/src/main/AndroidManifest.xml

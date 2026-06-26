@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.merged.app.MergedRuntimeApp"
+        android:allowBackup="false"
+        android:label="Merged Runtime"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="com.merged.app.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.merged.app.EngineRuntimeService"
+            android:exported="false"
+            android:process=":engine" />
+
+        <service
+            android:name="com.merged.app.AutomationRuntimeService"
+            android:exported="false"
+            android:process=":automation" />
+
+        <service
+            android:name="com.merged.app.PluginRuntimeService"
+            android:exported="false"
+            android:process=":plugin" />
+
+    </application>
+</manifest>
